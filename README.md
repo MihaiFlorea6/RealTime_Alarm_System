@@ -7,7 +7,7 @@ The architecture is based on a strictly modular RTL approach, ensuring determini
 
 # Objectives
 The primary objective was to design a production-ready FPGA security system capable of:
-**→ Validating user-entered PINs against a secure hardware register with single-cycle comparison logic.**
+* **→ Validating user-entered PINs against a secure hardware register with single-cycle comparison logic.**
 → Implementing a deterministic Finite State Machine (FSM) with a 3-attempt lockout policy (SYSTEM_LOCK).
 → Real-time asynchronous status broadcasting via a custom ASCII-over-UART protocol.
 → Eliminating data race conditions and button bouncing through advanced input conditioning (Edge Detection & Debouncing).
