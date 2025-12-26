@@ -5,13 +5,13 @@ Verilog implementation of a modular System-on-Chip (SoC) security controller des
 # Architecture
 The architecture is based on a strictly modular RTL approach, ensuring deterministic behavior and timing-clean implementation. It integrates high-frequency debouncers, edge-sensitive pulse generators, and a dual-FSM system: one for security logic and one for asynchronous data serialization. The system bridges the gap between the 100MHz FPGA clock domain and a 9600 Baud serial interface for external monitoring.
 
-# Objectives
+__Objectives__
 The primary objective was to design a production-ready FPGA security system capable of:
-## → Validating user-entered PINs against a secure hardware register with single-cycle comparison logic.
-## → Implementing a deterministic Finite State Machine (FSM) with a 3-attempt lockout policy (SYSTEM_LOCK).
-## → Real-time asynchronous status broadcasting via a custom ASCII-over-UART protocol.
-## → Eliminating data race conditions and button bouncing through advanced input conditioning (Edge Detection & Debouncing).
-## → Providing a responsive Web-based monitoring UI using Python and Streamlit for live security logs.
+→ Validating user-entered PINs against a secure hardware register with single-cycle comparison logic.
+→ Implementing a deterministic Finite State Machine (FSM) with a 3-attempt lockout policy (SYSTEM_LOCK).
+→ Real-time asynchronous status broadcasting via a custom ASCII-over-UART protocol.
+→ Eliminating data race conditions and button bouncing through advanced input conditioning (Edge Detection & Debouncing).
+→ Providing a responsive Web-based monitoring UI using Python and Streamlit for live security logs.
 
 # FSM Logic
 The system's "intelligence" is split into two specialized controllers to ensure reliability:
