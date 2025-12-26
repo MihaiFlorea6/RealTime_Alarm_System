@@ -8,10 +8,10 @@ The architecture is based on a strictly modular RTL approach, ensuring determini
 # Objectives
 The primary objective was to design a production-ready FPGA security system capable of:
 * **→ Validating user-entered PINs against a secure hardware register with single-cycle comparison logic.**
-→ Implementing a deterministic Finite State Machine (FSM) with a 3-attempt lockout policy (SYSTEM_LOCK).
-→ Real-time asynchronous status broadcasting via a custom ASCII-over-UART protocol.
-→ Eliminating data race conditions and button bouncing through advanced input conditioning (Edge Detection & Debouncing).
-→ Providing a responsive Web-based monitoring UI using Python and Streamlit for live security logs.
+* **→ Implementing a deterministic Finite State Machine (FSM) with a 3-attempt lockout policy (SYSTEM_LOCK).**
+* **→ Real-time asynchronous status broadcasting via a custom ASCII-over-UART protocol.**
+* **→ Eliminating data race conditions and button bouncing through advanced input conditioning (Edge Detection & Debouncing).**
+* **→ Providing a responsive Web-based monitoring UI using Python and Streamlit for live security logs.**
 
 # FSM Logic
 The system's "intelligence" is split into two specialized controllers to ensure reliability:
@@ -23,15 +23,18 @@ Serializes the system status into full ASCII strings (e.g., "STATUS:OPEN;") usin
 
 # Skills
 This project demonstrates proficiency in:
-## → RTL Design and modular Verilog architecture for Artix-7 FPGAs.
-## → Advanced FSM design for both control logic and data serialization.
-## → Cross-domain synchronization (FPGA-to-PC communication).
-## → Input conditioning and edge-sensitive event handling in high-frequency designs.
-## → Hardware-Software integration (Verilog + Python/Streamlit).
-## → Verification and Validation (V&V) using RTL simulation and hardware testbenches.
+* **→ RTL Design and modular Verilog architecture for Artix-7 FPGAs.**
+* **→ Advanced FSM design for both control logic and data serialization.**
+* **→ Cross-domain synchronization (FPGA-to-PC communication).**
+* **→ Input conditioning and edge-sensitive event handling in high-frequency designs.**
+* **→ Hardware-Software integration (Verilog + Python/Streamlit).**
+* **→ Verification and Validation (V&V) using RTL simulation and hardware testbenches.**
 
 # Testing
-The design was fully synthesized and validated on the Basys3 board. Testing confirmed stable debouncing, zero-error UART transmission (no data flooding due to implemented edge detectors), and real-time synchronization with the Python-based dashboard. Timing reports confirmed a positive Slack at 100MHz.
+
+*The design was fully synthesized and validated on the Basys3 board.* 
+Testing confirmed stable debouncing, zero-error UART transmission (no data flooding due to implemented edge detectors), and real-time synchronization with the Python-based dashboard. 
+Timing reports confirmed a positive Slack at 100MHz.
 
 # Key Technologies
 Verilog HDL, Artix-7 (Basys3), Xilinx Vivado, UART Protocol, RTL Design, Python, Streamlit UI, Digital Logic Synthesis.
