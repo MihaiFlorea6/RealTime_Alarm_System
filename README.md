@@ -21,11 +21,20 @@ The primary objective was to design a production-ready FPGA security system capa
 # FSM Logic
 The system's "intelligence" is split into two specialized controllers to ensure reliability:
 ## 1. Security Controller FSM
-Manages the access states (IDLE, OPEN, WRONG, LOCK) and the attempt counter.
-
+Manages the access states (IDLE, OPEN, WRONG, LOCK) and the attempt counter. 
+ <p align="center">
+  <img src="docs/FSM_Control_Diagram_ALARM_SYSTEM.drawio.png"
+       width="500"
+       style="border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.25);">
+</p>
 
 ## 2. UART Transmission FSM
-Serializes the system status into full ASCII strings (e.g., "STATUS:OPEN;") using a hardware handshaking protocol (w_uart_busy).
+* Serializes the system status into full ASCII strings (e.g., "STATUS:OPEN;") using a hardware handshaking protocol (w_uart_busy). 
+<p align="center">
+  <img src="docs/FSM_UART_Transmission_Diagram_ALARM_SYSTEM.drawio.png"
+       width="500"
+       style="border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.25);">
+</p>
 
 # Skills
 This project demonstrates proficiency in:  
