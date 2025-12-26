@@ -2,6 +2,9 @@
 # Technical Description
 Verilog implementation of a modular System-on-Chip (SoC) security controller designed for the Basys3 FPGA board. This project features a robust PIN verification engine, a hardware-enforced lockout policy and a custom UART-based communication protocol that broadcasts system status to a real-time Python/Streamlit dashboard.
 
+![Alarm System Dashboard](docs/ALARM_SYSTEM_DASHBOARD.png)
+
+
 # Architecture
 The architecture is based on a strictly modular RTL approach, ensuring deterministic behavior and timing-clean implementation.  
 It integrates high-frequency debouncers, edge-sensitive pulse generators, and a dual-FSM system: one for security logic and one for asynchronous data serialization.  
