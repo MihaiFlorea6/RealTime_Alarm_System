@@ -1,7 +1,7 @@
 # Real-Time Alarm System with UART Web Monitoring
 # Technical Description
 Verilog implementation of a modular System-on-Chip (SoC) security controller designed for the Basys3 FPGA board. This project features a robust PIN verification engine, a hardware-enforced lockout policy and a custom UART-based communication protocol that broadcasts system status to a real-time Python/Streamlit dashboard.
-
+![UART Web Monitoring](docs/ALARM_SYSTEM_DASHBOARD1)
 
 
 
