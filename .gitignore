@@ -1,0 +1,20 @@
+# Vivado temporary files
+*.jou
+*.log
+*.os
+.Xil/
+*/.cache/
+*/.runs/
+*/.hw/
+*/.sim/
+*/.ip_user_files/
+*/.srcs/utils_1/
+
+# Compilation outputs
+*.bit
+*.bin
+
+# Python junk
+__pycache__/
+.venv/
+*.pyc
