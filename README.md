@@ -46,8 +46,8 @@ This project demonstrates proficiency in:
 **→ Verification and Validation (V&V) using RTL simulation and hardware testbenches.**  
 
 # Testing 
-The design was fully synthesized and validated on the Basys3 board.  
-Testing confirmed stable debouncing, zero-error UART transmission (no data flooding due to implemented edge detectors), and real-time synchronization with the Python-based dashboard.  
+The design was fully synthesized and validated on the `Basys3 board`.  
+Testing confirmed `stable debouncing`, zero-error `UART transmission` (no data flooding due to implemented edge detectors), and `real-time synchronization` with the Python-based dashboard.  
 Timing reports confirmed a positive Slack at 100MHz.  
 
 # Key Technologies
