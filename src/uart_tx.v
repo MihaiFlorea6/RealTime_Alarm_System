@@ -8,7 +8,7 @@ Description: Serial transmitter (8N1). Converts parallel bytes to
 
 module uart_tx #(
     parameter CLK_FREQ = 100_000_000,
-    parameter BAUD_RATE =9600
+    parameter BAUD_RATE = 9600
 )(
     input wire i_clk,
     input wire i_rst,
